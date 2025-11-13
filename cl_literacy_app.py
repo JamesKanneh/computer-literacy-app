@@ -108,7 +108,10 @@ def login():
     else:
         print("Incorrect password.")
         return None
-
+"""
+    Prompt user to login.
+    Returns the username if successful, else None.
+    """
 
 def add_resource(current_user: str):
     if not current_user:
