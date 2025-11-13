@@ -20,7 +20,18 @@ from typing import Dict, List
 USERS_FILE = "users.json"
 RESOURCES_FILE = "resources.json"
 
+"""
+cl_literacy_app.py
+Menu-driven command-line app to educate the young generation on computer literacy.
+Features:
+ - Sign up / Login (password hashed)
+ - Add resource (title, description, level, tags)
+ - View all resources
+ - Search by level or tag
+ - Simple JSON persistence: users.json, resources.json
 
+Edited by Nziza21 for group contribution
+"""
 def ensure_files():
     if not os.path.exists(USERS_FILE):
         with open(USERS_FILE, "w") as f:
