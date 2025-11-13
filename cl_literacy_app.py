@@ -30,7 +30,7 @@ Features:
  - Search by level or tag
  - Simple JSON persistence: users.json, resources.json
 
-Edited by Nziza21 for group contribution
+Edited by Nziza
 """
 def ensure_files():
     if not os.path.exists(USERS_FILE):
@@ -109,8 +109,8 @@ def login():
         print("Incorrect password.")
         return None
 """
-    Prompt user to login.
-    Returns the username if successful, else None.
+    Prompt the user to log in.
+    Returns the username if successful; otherwise, returns None.
     """
 
 def add_resource(current_user: str):
