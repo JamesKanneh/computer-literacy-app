@@ -40,6 +40,10 @@ def ensure_files():
         with open(RESOURCES_FILE, "w") as f:
             json.dump([], f)
 
+def load_users() -> Dict[str, dict]:
+    with open(USERS_FILE, "r") as f:
+        return json.load(f)
+
 
 
 
