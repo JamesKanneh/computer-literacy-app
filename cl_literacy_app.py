@@ -10,8 +10,8 @@ Features:
  - Simple JSON persistence: users.json, resources.json
 """
 
-import 
-import 
+import json
+import os
 import hashlib
 import getpass
 import datetime
