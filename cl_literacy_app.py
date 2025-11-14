@@ -41,9 +41,6 @@ def ensure_files():
             json.dump([], f)
 
 
-def load_users() -> Dict[str, dict]:
-    with open(USERS_FILE, "r") as f:
-        return json.load(f)
 
 
 def save_users(users: Dict[str, dict]):
