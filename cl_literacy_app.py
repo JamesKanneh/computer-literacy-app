@@ -47,9 +47,7 @@ def load_users() -> Dict[str, dict]:
 
 
 
-def save_users(users: Dict[str, dict]):
-    with open(USERS_FILE, "w") as f:
-        json.dump(users, f, indent=2)
+
 
 
 def load_resources() -> List[dict]:
