@@ -32,6 +32,13 @@ Features:
 
 Edited by Nziza
 """
+def ensure_files():
+    if not os.path.exists(USERS_FILE):
+        with open(USERS_FILE, "w") as f:
+            json.dump({}, f)
+    if not os.path.exists(RESOURCES_FILE):
+        with open(RESOURCES_FILE, "w") as f:
+            json.dump([], f)
 
 
 def load_users() -> Dict[str, dict]:
@@ -178,6 +185,57 @@ def search_resources():
         print(f"- [{r['id']}] {r['title']} (Level: {r.get('level')}) by {r.get('author')}")
 
 
+def main_menu():
+    ensure_files()
+    current_user = None
+    while True:
+        print("\n====================")
+        print("Computer Literacy Hub")
+        print("====================")
+        if current_user:
+            print(f"Logged in as: {current_user}")
+            print("1) Add resource")
+            print("2) View all resources")
+            print("3) Search resources")
+            print("4) Logout")
+            print("5) Exit")
+            choice = input("Choose an option (1-5): ").strip()
+            if choice == "1":
+                add_resource(current_user)
+            elif choice == "2":
+                view_resources()
+            elif choice == "3":
+                search_resources()
+            elif choice == "4":
+                print(f"User '{current_user}' logged out.")
+                current_user = None
+            elif choice == "5":
+                print("Goodbye — thanks for improving computer literacy! 👋")
+                break
+            else:
+                print("Invalid choice.")
+        else:
+            print("1) Sign up")
+            print("2) Login")
+            print("3) View all resources (read-only)")
+            print("4) Search resources")
+            print("5) Exit")
+            choice = input("Choose an option (1-5): ").strip()
+            if choice == "1":
+                signup()
+            elif choice == "2":
+                user = login()
+                if user:
+                    current_user = user
+            elif choice == "3":
+                view_resources()
+            elif choice == "4":
+                search_resources()
+            elif choice == "5":
+                print("Goodbye — keep learning! 👋")
+                break
+            else:
+                print("Invalid choice.")
 
 
 if __name__ == "__main__":
