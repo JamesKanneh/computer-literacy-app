@@ -211,7 +211,7 @@ def main_menu():
                 print(f"User '{current_user}' logged out.")
                 current_user = None
             elif choice == "5":
-                print("Goodbye — thanks for improving computer literacy! 👋")
+                print("Goodbye — thanks for improving computer literacy! ")
                 break
             else:
                 print("Invalid choice.")
@@ -233,7 +233,7 @@ def main_menu():
             elif choice == "4":
                 search_resources()
             elif choice == "5":
-                print("Goodbye — keep learning! 👋")
+                print("Goodbye — keep learning! ")
                 break
             else:
                 print("Invalid choice.")
@@ -244,3 +244,20 @@ if __name__ == "__main__":
         main_menu()
     except KeyboardInterrupt:
         print("\nInterrupted. Exiting. Goodbye!")
+
+r = int(input("Rate the App (1-5): "))
+if r < 1 or r > 5:
+    print("Invalid Option. Please enter a rating between 1-5")
+    r = int(input("Rate the App (1-5): "))
+    if r <= 4:
+        print("Thank you for the response. Please suggest what can be improveded for better experience")
+        input("Your Suggestion: ")
+        print("Thank you for your suggestion.")
+    if r == 5:
+        print("Thank you for the positive response.")
+elif r <= 4:
+    print("Thank you for the response. Please suggest what can be improveded for better experience")
+    input("Your Suggestion: ")
+    print("Thank you for your suggestion.")
+elif r == 5:
+    print("Thank you for the positive response.")
