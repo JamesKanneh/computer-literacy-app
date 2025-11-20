@@ -177,7 +177,9 @@ def signup():
     if pw != pw2:
         print("Passwords did not match.")
         return None
-    users[username] = {"password": hash_password(pw), "created_at": datetime.datetime.utcnow().isoformat()+"Z"}
+    users[username] = {
+        "password": hash_password(pw), 
+        "created_at": datetime.datetime.now().isoformat()}
     save_users(users)
     print(f"Account created for '{username}'. You can now log in.")
 
