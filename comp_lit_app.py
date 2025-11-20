@@ -113,6 +113,7 @@ QUIZZES = {
         {"q": "What does OS stand for?", "options": ["Open Software", "Output Signal", "Operating System" ], "ans": 3},
         {"q": "Which is an output device?", "options": ["Mouse", "Printer", "Keyboard"], "ans": 2},
         {"q": "RAM stands for?", "options": ["Random Access Memory", "Read After Memory", "Run All Modules"], "ans": 1},
+        {"q": "Which device displays output?", "options": ["Keyboard", "Monitor", "Mouse"], "ans": 2},
         
     ],
     "B": [
