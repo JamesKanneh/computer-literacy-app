@@ -110,9 +110,10 @@ QUIZZES = {
     "A": [
         {"q": "What is a computer?", "options": ["A device to process information", "A type of phone", "A kitchen appliance"], "ans": 1},
         {"q": "Which is an input device?", "options": ["Monitor", "Printer", "Keyboard"], "ans": 3},
+        {"q": "What does OS stand for?", "options": ["Open Software", "Output Signal", "Operating System" ], "ans": 3},
         {"q": "Which is an output device?", "options": ["Mouse", "Printer", "Keyboard"], "ans": 2},
         {"q": "RAM stands for?", "options": ["Random Access Memory", "Read After Memory", "Run All Modules"], "ans": 1},
-        {"q": "What does OS stand for?", "options": ["Open Software", "Output Signal", "Operating System" ], "ans": 3},
+        
     ],
     "B": [
         {"q": "What is LAN?", "options": ["Large Access Node", "Long Application Network", "Local Area Network"], "ans": 3},
