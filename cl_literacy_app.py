@@ -10,11 +10,7 @@ Features:
  - Simple JSON persistence: users.json, resources.json
 """
 
-import json
-import os
-import hashlib
-import getpass
-import datetime
+
 from typing import Dict, List
 
 USERS_FILE = "users.json"
