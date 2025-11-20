@@ -306,7 +306,7 @@ def main_menu():
                 current_user = "Guest"
                 print("Continuing as Guest...")
             elif choice == "4":
-                print("Goodbye!")
+                #print("Goodbye!")
                 break
             else:
                 print("Invalid choice.")
@@ -316,3 +316,22 @@ if __name__ == "__main__":
         main_menu()
     except KeyboardInterrupt:
         print("\nInterrupted. Exiting. Goodbye!")
+
+# Edited by David
+r = int(input("Rate the App (1-5): "))
+if r < 1 or r > 5:
+    print("Invalid Option. Please enter a rating between 1-5")
+    r = int(input("Rate the App (1-5): "))
+    if r <= 4:
+        print("Thank you for the response. Please suggest what can be improveded for better experience")
+        input("Your Suggestion: ")
+        print("Thank you for your suggestion.")
+    if r == 5:
+        print("Thank you for the positive response.")
+elif r <= 4:
+    print("Thank you for the response. Please suggest what can be improveded for better experience")
+    input("Your Suggestion: ")
+    print("Thank you for your suggestion.")
+elif r == 5:
+    print("Thank you for the positive response.")
+print("Goodbye - Hope to see you again.")
