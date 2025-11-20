@@ -109,24 +109,24 @@ RESOURCES = {
 QUIZZES = {
     "A": [
         {"q": "What is a computer?", "options": ["A device to process information", "A type of phone", "A kitchen appliance"], "ans": 1},
-        {"q": "Which is an input device?", "options": ["Keyboard", "Monitor", "Printer"], "ans": 1},
+        {"q": "Which is an input device?", "options": ["Monitor", "Printer", "Keyboard"], "ans": 3},
         {"q": "Which is an output device?", "options": ["Mouse", "Printer", "Keyboard"], "ans": 2},
         {"q": "RAM stands for?", "options": ["Random Access Memory", "Read After Memory", "Run All Modules"], "ans": 1},
-        {"q": "What does OS stand for?", "options": ["Operating System", "Open Software", "Output Signal"], "ans": 1},
+        {"q": "What does OS stand for?", "options": ["Open Software", "Output Signal", "Operating System" ], "ans": 3},
     ],
     "B": [
-        {"q": "What is LAN?", "options": ["Local Area Network", "Large Access Node", "Long Application Network"], "ans": 1},
+        {"q": "What is LAN?", "options": ["Large Access Node", "Long Application Network", "Local Area Network"], "ans": 3},
         {"q": "Which is system software?", "options": ["Microsoft Word", "Windows OS", "Chrome"], "ans": 2},
         {"q": "Which is permanent storage?", "options": ["RAM", "HDD", "Cache"], "ans": 2},
         {"q": "CPU stands for?", "options": ["Central Processing Unit", "Computer Power Unit", "Control Processing Utility"], "ans": 1},
         {"q": "SSD is?", "options": ["Temporary storage", "Solid State Drive", "Software Storage Device"], "ans": 2},
     ],
     "C": [
-        {"q": "What is TCP/IP used for?", "options": ["Networking", "Storage", "Programming"], "ans": 1},
+        {"q": "What is TCP/IP used for?", "options": ["Storage","Networking", "Programming"], "ans": 2},
         {"q": "SQL is used for?", "options": ["Database queries", "Memory management", "Networking"], "ans": 1},
         {"q": "What is encryption?", "options": ["Data encoding for security", "Virus software", "Hardware device"], "ans": 1},
         {"q": "CPU contains?", "options": ["ALU", "Registers", "Both ALU and Registers"], "ans": 3},
-        {"q": "Firewall is used for?", "options": ["Security", "Data storage", "Processing"], "ans": 1},
+        {"q": "Firewall is used for?", "options": ["Data storage","Security", "Processing"], "ans": 2},
     ]
 }
 
