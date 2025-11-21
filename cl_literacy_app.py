@@ -41,7 +41,10 @@ def load_users() -> Dict[str, dict]:
     with open(USERS_FILE, "r") as f:
         return json.load(f)
 
-
+"""
+Computer Literacy CLI App - Mini Course Version
+A simple interactive program to help users understand computers, software, and basic IT concepts.
+"""
 
 def save_users(users: Dict[str, dict]):
     with open(USERS_FILE, "w") as f:
