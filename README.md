@@ -1,5 +1,4 @@
-# Computer Literacy CLI App (Mini Course Edition)
-
+# Computer Literacy CLI App 
 A beginner-friendly command-line learning tool that teaches computer literacy concepts through interactive lessons, quizzes, and progress tracking.
 Includes user accounts, guest mode, multi-level resources, and a rating/feedback system.
 
@@ -90,7 +89,7 @@ After closing the program:
  Optionally provide feedback
  Enjoy the closing message
 
- ###Security
+ ### Security
 
  Passwords are stored hashed with SHA-256 (never in plain text).
 User data is stored locally on your machine in JSON format.
