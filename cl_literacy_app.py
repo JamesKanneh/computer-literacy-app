@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from typing import Dict
 """
 cl_literacy_app.py
 Menu-driven command-line app to educate the young generation on computer literacy.
@@ -10,16 +11,13 @@ Features:
  - Simple JSON persistence: users.json, resources.json
 
 from typing import Dict, List
-"""
-Computer Literacy CLI App - Mini Course Version
-Includes guest mode, quizzes, and enriched resources.
-"""
+
 USERS_FILE = "users.json"
 RESOURCES_FILE = "resources.json"
 
 """
-cl_literacy_app.py
-Menu-driven command-line app to educate the young generation on computer literacy.
+
+"""
 Features:
  - Sign up / Login (password hashed)
  - Add resource (title, description, level, tags)
@@ -41,10 +39,6 @@ def load_users() -> Dict[str, dict]:
     with open(USERS_FILE, "r") as f:
         return json.load(f)
 
-"""
-Computer Literacy CLI App - Mini Course Version
-A simple interactive program to help users understand computers, software, and basic IT concepts.
-"""
 
 def save_users(users: Dict[str, dict]):
     with open(USERS_FILE, "w") as f:
@@ -109,10 +103,7 @@ def login():
     else:
         print("Incorrect password.")
         return None
-"""
-    Prompt the user to log in.
-    Returns the username if successful; otherwise, returns None.
-    """
+
 
 def add_resource(current_user: str):
     if not current_user:
