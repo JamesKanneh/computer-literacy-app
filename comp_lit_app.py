@@ -204,10 +204,10 @@ def login():
 def view_resources():
     while True:
         print("\n=== Learning Resources ===")
-        print("Choose difficulty (or type 'exit' to go back):")
+        print("Choose difficulty (or type '0' to go back):")
         print("A) Beginner  B) Intermediate  C) Advanced")
         diff = input("Your choice: ").strip().upper()
-        if diff.lower() == "exit":
+        if diff.lower() == "0":
             break
         if diff not in RESOURCES:
             print("Invalid choice.")
@@ -218,8 +218,8 @@ def view_resources():
             print(f"\n=== {diff} Level Resources ===")
             for idx, t in enumerate(topics, 1):
                 print(f"{idx}. {t['title']}")
-            choice = input("Enter resource ID to read or type 'exit' to go back: ").strip()
-            if choice.lower() == "exit":
+            choice = input("Enter resource ID to read or type '0' to go back: ").strip()
+            if choice.lower() == "0":
                 break
             if choice.isdigit():
                 idx = int(choice)-1
@@ -308,7 +308,6 @@ def main_menu():
                 current_user = "Guest"
                 print("Continuing as Guest...")
             elif choice == "4":
-                #print("Goodbye!")
                 break
             else:
                 print("Invalid choice.")
