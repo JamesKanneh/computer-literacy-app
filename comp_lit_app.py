@@ -13,7 +13,8 @@ import datetime
 USERS_FILE = "users.json"
 PROGRESS_FILE = "progress.json"
 """
-Computer Literacy CLI App - Mini Course Version
+Computer Literacy CLI App
+
 Provides interactive learning, quizzes, and resources for beginners to advanced users.
 """
 # Resources and Quiz content
@@ -54,7 +55,7 @@ RESOURCES = {
                   "Example: Office computers connected to a printer form a LAN; accessing a website is using WAN."},
 
         {"title": "File Systems", 
-         "notes": "File systems like NTFS, FAT32, and ext4 determine how data is stored and retrieved on disks.\n\n"
+         "notes": "File systems like NTFS, FAT32, and ext4 determine how data is stored and retrieved on disks.File systems structure data into a hierachy of files and folders.\n\n"
                   "Example: NTFS supports large files and security permissions, while FAT32 is compatible with older devices."},
 
         {"title": "Software Types", 
@@ -100,7 +101,7 @@ RESOURCES = {
 
         {"title": "Cloud Computing", 
          "notes": "Cloud computing offers servers, storage, databases, and software over the Internet.\n\n"
-                  "Example: Google Docs lets you create and store documents online without local installation."},
+                  "Example: Google Docs lets you create and store documents online without local installation. Also streaming services like Netflix."},
 
         {"title": "Virtualization", 
          "notes": "Virtualization allows one physical machine to run multiple virtual machines.\n\n"
