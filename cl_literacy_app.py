@@ -8,11 +8,12 @@ Features:
  - View all resources
  - Search by level or tag
  - Simple JSON persistence: users.json, resources.json
-"""
-
 
 from typing import Dict, List
-
+"""
+Computer Literacy CLI App - Mini Course Version
+Includes guest mode, quizzes, and enriched resources.
+"""
 USERS_FILE = "users.json"
 RESOURCES_FILE = "resources.json"
 
