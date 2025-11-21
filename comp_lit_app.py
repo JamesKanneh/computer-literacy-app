@@ -12,7 +12,10 @@ import datetime
 
 USERS_FILE = "users.json"
 PROGRESS_FILE = "progress.json"
-
+"""
+Computer Literacy CLI App - Mini Course Version
+Provides interactive learning, quizzes, and resources for beginners to advanced users.
+"""
 # Resources and Quiz content
 RESOURCES = {
     "A": [  # Beginner
