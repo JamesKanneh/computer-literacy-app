@@ -39,21 +39,6 @@ At the end of the app, users can:
  Provide suggestions for improvement
  Receive personalized responses based on their rating
 
-## Installation
-
-- Clone GitHub Repo:
- https://github.com/your-username/your-repo-name
-
-- Requirements
-
- Python 3
- No external libraries required (standard library only)
-
-- Run the Application
-   python3 comp_lit_app.py
-
-The app will automatically generate required data files on first run.
-
 ## How to Use
 
 - Launch the App
@@ -92,4 +77,5 @@ After closing the program:
  ### Security
 
  Passwords are stored hashed with SHA-256 (never in plain text).
+
 User data is stored locally on your machine in JSON format.
